@@ -1,26 +1,30 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+# Ionic Firebase Storage
 
-## How to use this template
+1. Create new project `ionic start FirebaseStorage blank`
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
+2. Install firebase `npm install firebase --save`
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
+3. Create FirebaseProvider `ionic g provider Firebase`
 
-### With the Ionic CLI:
+4. Install File plugin, run:
+ - `ionic cordova plugin add cordova-plugin-file`
+ - `npm install --save @ionic-native/file`
+ 
+5. Install FileChooser, run:
+ - `ionic cordova plugin add cordova-plugin-filechooser`
+ - `npm install --save @ionic-native/file-chooser`
 
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
+6. Install FilePath, run:
+ - `ionic cordova plugin add cordova-plugin-filepath`
+ - `npm install --save @ionic-native/file-path`
 
-```bash
-$ sudo npm install -g ionic cordova
-$ ionic start myBlank blank
-```
+7. Install Camera, run:
+ - `ionic cordova plugin add cordova-plugin-camera`
+ - `npm install --save @ionic-native/camera`
 
-Then, to run it, cd into `myBlank` and run:
+8. Install `path` library `npm install --save path`
+ 
 
-```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
-```
+Inpect Device: `chrome://inspect/#devices`
 
-Substitute ios for android if not on a Mac.
-
+Note: If error on compile, run `npm install promise-polyfill`.
