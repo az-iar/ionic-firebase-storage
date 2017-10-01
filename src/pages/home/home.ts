@@ -65,7 +65,9 @@ export class HomePage {
       // upload to firebase
       return this.firebase.uploadFile(dataUrl, filename);
     }).then(snapshot => {
-      console.log("File uploaded to Firebase!");
+      return this.alertCtrl.create({
+        message: "File uploaded to Firebase!"
+      }).present();
     });
   }
 }
